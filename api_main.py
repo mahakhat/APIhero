@@ -14,9 +14,6 @@ API_KEY = os.getenv("OPENAI_API_KEY")
 openai.api_key= API_KEY
 
 
-
-
-
 #This API was created to link the backend of the Deux project with the Wordpress Website
 #This is the main file of the API to be run.
 #The project includes the files  config.json, main.py, front.py which are used to create the conversations and display them in a python app.
