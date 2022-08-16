@@ -1,0 +1,73 @@
+<html>
+    <link rel="stylesheet" href="main.css" />
+    <body class="bg">
+        <form action="http://localhost:5000/main" method="post" name="myform">
+            <div class = "top">
+                    <h1 class = "Deus">DEUS - X - MACHINA</h1>
+            </div>
+            <div class = "bottom">
+                <div class="left">
+                    <div>
+                        <h2>Select the type of conversation:</h2>
+                    </div>
+                    <div>
+                        <input type="radio" id="human_robot" name="choice" value="human" onclick="hideContent()"/>
+                        <label id="label_human" for="human_robot"> Human & Robot</label><br />
+                        <input type="radio" id="robot_robot" name="choice" value="robot" onclick="showContent()">
+                        <label id="label_robot" for="robot_robot"> Robot & Robot</label><br />
+                    </div>
+                    <script>
+                        function showContent() {
+                                const divOne = document.getElementById("label_religion2");
+                                if (divOne.hasAttribute('hidden')) {
+                                    divOne.removeAttribute('hidden');
+                                }
+                                const divTwo = document.getElementById("select_religion2");
+                                if (divTwo.hasAttribute('hidden')) {
+                                    divTwo.removeAttribute('hidden');
+                                }
+                            }
+
+                            function hideContent() {
+                                const divOne = document.getElementById("label_religion2");
+                                    divOne.setAttribute('hidden', true);
+                                const divTwo = document.getElementById("select_religion2");
+                                    divTwo.setAttribute('hidden', true);
+                            }
+                    </script>
+                    <div>
+                        <h2>Select the religion:</h2>
+                    </div>
+                    <div>
+                    <label id="label_religion1" for="religion1">Religion for Robot 1</label>
+                    <select id="select_religion1" name="religion1">
+                    <option value="Pastafarism">Pastafarism</option>
+                    <option value="Islam">Islam</option>
+                    <option value="Zeus">Zeus</option>
+                    <option value="Odin">Odin</option>
+                    <option value="Christianity">Christianity</option>
+                    <option value="Judaism">Judaism</option>
+                    <option value="Buddhism">Buddhism</option>
+                    </select></br>
+            
+                    <label id="label_religion2" for="religion2" hidden>Religion for Robot 2</label>
+                    <select id="select_religion2" name="religion2" hidden>
+                    <option value="Pastafarism">Pastafarism</option>
+                    <option value="Islam">Islam</option>
+                    <option value="Zeus">Zeus</option>
+                    <option value="Odin">Odin</option>
+                    <option value="Christianity">Christianity</option>
+                    <option value="Judaism">Judaism</option>
+                    <option value="Buddhism">Buddhism</option>
+                    </select></br>
+                    </div>
+                </div>
+                <div class="right">
+                    <div>
+                        <input type="submit" value="GO"/>
+                    </div>
+                </div>
+            </div>   
+        </form>
+    </body>
+</html>

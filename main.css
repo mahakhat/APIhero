@@ -1,0 +1,157 @@
+.bg{
+    background-color: rgb(6,15,24);
+  }
+
+.bottom {
+    height: 80%;
+    float: bottom;
+    background-image: url("pexels.jpg");
+    border: solid #29F48F;
+    box-shadow: 0px 0px 10px #29F48F;
+}
+  
+.top{
+    height: 20%;
+    float: top;
+    text-align: center;
+}
+
+.left{
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+
+.right{
+    height: 100%;
+    width: 50%;
+    float: right;
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100px;
+    font-weight: 100;
+    color:#29F48F;
+    text-shadow: #29F48F 0px 0px 10px;
+}
+
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+    font-weight: 100;
+    color:#29F48F;
+    text-shadow: #29F48F 0px 0px 10px;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+
+input[type=submit] {
+    width: 100px;
+    height: 50px;
+    background-color: #29F48F;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    color: rgb(6,15,24);
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px #29F48F;
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: 480px;
+    margin-right: 10px;
+}
+
+#religion1{
+  float: left;
+  font-family: 'Courier New', Courier, monospace;
+  margin-left: 10px;
+}
+
+#religion2{
+  float: left;
+  font-family: 'Courier New', Courier, monospace;
+  margin-left: 10px;
+}
+
+#human_robot{
+    cursor: pointer;
+    transform: scale(1.5);
+    accent-color: #29F48F;
+    clip-path: circle(46% at 50% 50%);
+    margin-left: 10px;
+}
+
+#robot_robot{
+    cursor: pointer;
+    transform: scale(1.5);
+    accent-color: #29F48F;
+    clip-path: circle(46% at 50% 50%);
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#label_human{
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+    color:#29F48F;
+    text-shadow: #29F48F 0px 0px 10px;
+    margin-left: 10px;
+}
+
+#label_robot{
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+    color:#29F48F;
+    text-shadow: #29F48F 0px 0px 10px;
+    margin-left: 10px;
+}
+
+#label_religion1{
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+    color:#29F48F;
+    text-shadow: #29F48F 0px 0px 10px;
+    margin-left: 10px;
+}
+
+#label_religion2{
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+    color:#29F48F;
+    text-shadow: #29F48F 0px 0px 10px;
+    margin-left: 10px;
+
+}
+
+#select_religion1{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #29F48F;
+    background-color: rgb(17,47,82);
+    border-color: rgb(17,47,82);
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgb(17,47,82);
+    text-shadow: #29F48F 0px 0px 10px;
+}
+
+#select_religion2{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #29F48F;
+    background-color: rgb(17,47,82);
+    border-color: rgb(17,47,82);
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgb(17,47,82);
+    text-shadow: #29F48F 0px 0px 10px;
+}

@@ -1,0 +1,130 @@
+
+.box{
+  border: 5px solid #29F48F;
+  background-color: rgb(6,15,24);
+  padding: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+  height: 400px;
+  box-shadow: 0px 0px 10px #29F48F;
+  position: static;
+}
+
+.center {
+    text-align: center;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+   }
+   
+
+.human_result{
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;  
+  color: black;
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  margin-left: 360px;
+  background-color: white;
+  padding: 4px;
+  border-radius: 50px;
+  text-align: left;
+  text-indent: 10px;
+  display: inline-block;
+}
+
+.robot_result{
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  color: black;
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  margin-right: 360px;
+  background-color: #29F48F;
+  padding: 4px;
+  border-radius: 50px;
+  text-align: left;
+  text-indent: 10px;
+  display: inline-block;
+}
+
+.bg-image{
+  background-image: url("pexels.jpg");
+  background-repeat: no-repeat center fixed;
+  background-size: cover;
+}
+
+.time_human{
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  position: relative;
+  width: fit-content;
+  display: inline-block;
+}
+
+.time_robot{
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  position: relative;
+  width: fit-content;
+  display: inline-block;
+}
+
+.human{
+  width: 100%;
+  height: 30%;
+  float: top;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.robot{
+  width: 100%;
+  height: 70%;
+  float: bottom;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 100px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 100;
+  color:#29F48F;
+}
+
+input[type=text] {
+    width: 500px;
+    height: 30px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 75px;
+    height: 30px;
+    background-color: #29F48F;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(6,15,24);
+    margin: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px #29F48F;
+}
+
+
+
+
+

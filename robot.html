@@ -1,0 +1,44 @@
+<html>
+  <link rel="stylesheet" href="robot.css" />
+  <body class="bg-image">
+    <form action="http://localhost:5000/robot" method="post" name="myform">
+      <h1>DEUS</h1>
+      <div class="center">
+        <div class="box">
+          <div class="robot1">
+            <div class="robot_result1" id="human_result1">
+              {robot_result1[i]}
+            </div>
+            <div class="time_robot1" id="robot_time1">
+              Sent at <span id="date-time1"></span>
+            </div>
+            <script>
+              var dt1 = new Date();
+              document.getElementById("date-time1").innerHTML =
+                dt1.toLocaleTimeString();
+            </script>
+          </div>
+          <div class="robot2">
+            <div class="robot_result2" id="robot_result2">
+              {robot_result2[i]}
+            </div>
+            <div class="time_robot2" id="robot_time2">
+              Sent at: <span id="date-time2"></span>
+            </div>
+            <script>
+              var dt2 = new Date();
+              document.getElementById("date-time2").innerHTML =
+                dt2.toLocaleTimeString();
+            </script>
+          </div>
+        </div>
+        <div class="center">
+          <input type="text" name="user_text" /><input
+            type="submit"
+            value="Send"
+          />
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

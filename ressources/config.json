@@ -1,0 +1,67 @@
+
+{
+  "project": "gpt3",
+  "religions": {
+    "Pastafarianism": "a religion centered around the Flying Spaghetti Monster, a creator deity who resembles spaghetti and meatballs.",
+    "Islam": "the religion of the Muslims, a monotheistic faith regarded as revealed through Muhammad as the Prophet of Allah. ",
+    "Zeus": "in Greek mythology, is the greatest of the gods, the god of the sky and the weather, who ruled over human beings and the other gods",
+    "Odin": "the main god in norse mythology, he is the god of war and death ",
+    "Christianity": "a religion based on belief in God and the life and teachings of Jesus Christ, and on the Bible",
+    "Judaism": "the religion of the Jewish people, based on belief in one God and on the laws contained in the Torah and Talmud",
+    "Buddhism": "a religion that originally comes from South Asia, and teaches that personal spiritual improvement will lead to escape from human suffering"
+  },
+  "version": 1,
+  "disable_existing_loggers": false,
+  "formatters": {
+    "simple": {
+      "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+    },
+    "extra": {
+      "format": "%(asctime)-16s %(name)-8s %(filename)-12s %(lineno)-6s %(funcName)-30s %(levelname)-8s %(message)s",
+      "datefmt": "%m-%d %H:%M:%S"
+    }
+  },
+  "handlers": {
+    "console": {
+      "class": "logging.StreamHandler",
+      "level": "DEBUG",
+      "formatter": "simple",
+      "stream": "ext://sys.stdout"
+    },
+    "debug_file_handler": {
+      "class": "logging.handlers.RotatingFileHandler",
+      "level": "DEBUG",
+      "formatter": "extra",
+      "filename": "log/debug.log",
+      "maxBytes": 10485760,
+      "backupCount": 40,
+      "encoding": "utf8"
+    },
+    "error_file_handler": {
+      "class": "logging.handlers.RotatingFileHandler",
+      "level": "ERROR",
+      "formatter": "simple",
+      "filename": "log/errors.log",
+      "maxBytes": 10485760,
+      "backupCount": 40,
+      "encoding": "utf8"
+    }
+  },
+  "loggers": {
+    "my_module": {
+      "level": "ERROR",
+      "handlers": [
+        "console"
+      ],
+      "propagate": "no"
+    }
+  },
+  "root": {
+    "level": "INFO",
+    "handlers": [
+      "console",
+      "debug_file_handler",
+      "error_file_handler"
+    ]
+  }
+}
