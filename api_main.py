@@ -1,3 +1,4 @@
+from urllib import response
 from dotenv import load_dotenv
 import os
 import uvicorn
@@ -22,6 +23,8 @@ openai.api_key= API_KEY
 app = Flask(__name__, template_folder="APIhero")
 cache = Cache(app, config={'CACHE_TYPE': 'simple'})
 cache.init_app(app)
+
+
 
 
 @app.route('/main', methods=['POST'])
@@ -140,14 +143,15 @@ def robot():
 
         #TODO: Check for errors during the conversation.
         #TODO: Correct how the conversationis printed in the html file
-
         
         robot2_result=""
         robot1_result=""
         print(intro)
-        robot1_array = np.array(12)
-        robot2_array = np.array(12)
-        i = 0
+        #robot1_array = np.array(12)
+        #robot2_array = np.array(12)
+        #i = 0
+
+        robots_results = []
 
         turn = True
         for _ in range(12):
@@ -155,23 +159,30 @@ def robot():
             split_result = result.split("\n")
             if turn:
                 robot2_result = split_result[3]
-                np.append(robot2_result,robot2_result)
-                print(robot2_array)
-                out_robot2 = open("robot.html").read().format(robot_result1=robot1_array[0], robot_result2=robot2_array[0])
+                robots_results.append({'robot 2': robot2_result})
                 prompt_text=f"{intro} {robot2_result} \n{religion1}: "
-                return out_robot2
+            #return out_robot2
             elif turn==False:
                 robot1_result = split_result[3]
-                np.append(robot1_result,robot1_result)
-                print(robot1_result)
-                out_robot1 = open("robot.html").read().format(robot_result1=robot1_array, robot_result2=robot2_array)
+                #np.append(robot1_result,robot1_result)
+                #print(robot1_result)
+                robots_results.append({'robot 1': robot1_result})
+                #out_robot1 = open("robot.html").read().format(robot_result1=robot1_array, robot_result2=robot2_array)
                 prompt_text=f"{intro} {robot1_result} \n{religion2}: "
-                return out_robot1
+            #return out_robot1
             if turn == False:
                 turn = True
             else:
                 turn = False
-            i += 1
+                    #i += 1
+            
+            #robots_results = [ {'robot_1': 'aaad ejkvrwkv'},
+                        #  {'robot 2': 'hibi svd'},
+                        # {'robot 1': 'wrvwr wevwv'} ]
+
+            index = open("robot.html").read().format(results=["value 1", "value 2", "value 3"])
+            return index
+            
                 
 
 
